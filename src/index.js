@@ -1,8 +1,6 @@
 import Phaser from 'phaser';
-import Game from './scenes/Game';
-import Menu from './scenes/Menu';
 
-const config: Phaser.Types.Core.GameConfig = {
+const config = {
   type: Phaser.AUTO,
   parent: 'phaser-example',
   width: 800,
@@ -14,7 +12,7 @@ const config: Phaser.Types.Core.GameConfig = {
       gravity: { y: 1000 }
     }
   },
-  scene: [Game, Menu]
+  scene: []
 };
 
 new Phaser.Game(config);
